@@ -1,3 +1,5 @@
+
+
 pub struct Caricature {
     pub life: i32,
     pub attack: u16,
