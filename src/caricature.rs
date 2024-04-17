@@ -6,7 +6,7 @@ pub struct Caricature {
 }
 
 impl Caricature {
-    pub fn hit(&mut self, mut damage: u16) {
+    pub fn get_damage(&mut self, mut damage: u16) {
         damage = damage - self.defense;
         if damage > 0 {
             self.life = self.life - damage as i32;
