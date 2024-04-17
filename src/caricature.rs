@@ -11,10 +11,11 @@ impl Caricature {
         if damage > 0 {
             self.life = self.life - damage as i32;
         }
-        if self.life.is_negative(){}
-        self.die()
+        if self.life.is_negative() || self.life==0{self.die();}
+
     }
     fn die(&mut self){
         // TODO: set Caricature to die
     }
+
 }
