@@ -1,15 +1,8 @@
-use std::collections::LinkedList;
-use std::thread::Thread;
+mod caricature;
 
-fn test(a: i32, b: i32) -> i32 {
-    let e = 6;
-    println!("{}", e);
-    return a + b;
-}
 
 fn main() {
-    let x = 5;
-    let y = 2;
-    test(x, y);
-
+    let mut hero = caricature::Caricature { life: 10, attack: 5, defense: 2 };
+    hero.life=6;
+    print!("");
 }
